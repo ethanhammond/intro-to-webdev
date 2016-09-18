@@ -1,0 +1,149 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, img, ins, kbd, q, s, samp, small, strike, strong, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     outline: 0;
+     font-size: 100%;
+     vertical-align: baseline;
+     background: transparent;
+ }
+
+body {
+    font-family: "Oxygen", "serif";
+    background-image: url("../images/stormy-weather-background.jpg");
+    background-position: right top;
+    background-repeat: no-repeat;
+    line-height: 1.25;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#mastHead {
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    font-size: 60px;
+    padding-bottom: 1%
+}
+
+#title {
+    padding-left: 3%;
+    color: white;
+}
+
+.fa:hover {
+    color: white;
+    text-shadow: -1px 1px 8px grey, 1px -1px 8px grey;
+}
+
+#faHeader {
+    float: right;
+    margin: 1% 5% 0 0 ;
+    color: grey;
+    font-size: 40px;
+}
+
+#textBox {
+    margin: 7% 0 0 8%;
+    padding: 2% 2% 2% 2%;
+    background-color: black;
+    opacity: .8;
+    color: white;
+    width: 30%;
+    border: 5px double white;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 480px) { /*phone*/
+    body {
+        background-height: 100%;
+    }
+
+    #title {
+        font-size: 55px;
+    }
+
+    #mastHead {
+        padding-bottom: 12%;
+    }
+
+    #textBox {
+        line-height: 1.5;
+        border: none;
+        width: 100%;
+        margin: 10% 0 0 0;
+        padding: 2% 0 2% 0;
+    }
+
+    #faHeader {
+        margin: 1% 0 0 0;
+        float: left;
+        padding-left: 3%;
+    }
+
+    .fa-mobile {
+        color: white;
+        text-shadow: -1px 1px 8px grey, 1px -1px 8px grey;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) { /*Small tablet*/
+    body {
+        background-height: 100%;
+    }
+
+    #fa-header {
+        float: right;
+        margin: 1% 1% 0 0 ;
+    }
+
+    #textBox {
+        width: 40%;
+        margin: 15% 0 0 27%;
+    }
+
+    .fa-tablet {
+        color: white;
+        text-shadow: -1px 1px 8px grey, 1px -1px 8px grey;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) { /*Average tablet or small monitor*/
+    body {
+        background-size: 105%
+    }
+
+    #textBox {
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width: 1280px) { /*Widescreen*/
+    body {
+        background-size: 105%;
+    }
+
+    #textBox {
+        width: 23%;
+    }
+
+    .fa-desktop {
+        color: white;
+        text-shadow: -1px 1px 8px grey, 1px -1px 8px grey;
+    }
+}

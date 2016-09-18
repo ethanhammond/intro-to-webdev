@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<!--
+AUTHOR: EH
+VERSION: 1.0
+CREATED: 3.6.2015
+ASSIGNMENT: Ski Patrol Sign-In
+-->
+
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Ski Patrol Sign-In</title>
+    <link rel="stylesheet" href="css/foundation.css"/>
+</head>
+<body>
+    <div id="title">
+        <div class="row">
+            <div class="small-4 columns end">
+                <h1>NNSP Sign-In</h1>
+            </div>
+        </div>
+    </div>
+        <form name="patrolForm">
+            <div class="row"> <!-- date row -->
+                <div class=" small-6 medium-3 columns">
+                    <div id="date"></div>
+                    <div id="weekDay"></div>
+                </div>
+            </div>
+
+            <div class="row collapse"> <!-- panel row-->
+                <div class="small-2 medium-1 columns">
+                    <div class="panel">
+                        <label class="text-center">Team</label>
+                    </div>
+                </div>
+                <div class="small-3 medium-2 columns">
+                    <div class="panel">
+                        <label class="text-center">Radio #</label>
+                    </div>
+                </div>
+                <div class="small-7 medium-3 columns">
+                    <div class="panel">
+                        <label class="text-center">Patroller</label>
+                    </div>
+                </div>
+                <div class="small-3 medium-2 columns">
+                    <div class= "panel">
+                        <label class="text-center">Time</label>
+                    </div>
+                </div>
+                <div class="small-3 medium-2 columns">
+                    <div class="panel">
+                        <label class="text-center">Rating</label>
+                    </div>
+                </div>
+                <div class="small-6 medium-2 columns">
+                    <div class="panel">
+                        <label class="text-center">Guest Name</label>
+                    </div>
+                </div>
+            </div>
+
+            <div id=newRow1.1" class="row"> <!--row 1.1-->
+                <fieldset>
+                    <div class="small-2 medium-1 columns">
+                        <label>1.1</label>
+                    </div>
+                    <div class="small-3 medium-2 columns">
+                        <input type="number" required id="radioNum1.1" min="1" max="20" placeholder="1-20">
+                    </div>
+                    <div class="small-7 medium-3 columns">
+                        <input type="text" id="patroller1.1" required maxlength="50" placeholder="Name">
+                    </div>
+                    <div class="small-3 medium-2 column">
+                        <input type="time" required id="dateTime1.1">
+                    </div>
+                    <div class="small-3 medium-2 column">
+                        <select id="cert1.1">
+                            <option value="BAS">BAS</option>
+                            <option value="CER">CER</option>
+                            <option value="SEN">SEN</option>
+                        </select>
+                    </div>
+                    <div class="small-6 medium-2 columns end">
+                        <input type="text" required id="guestName1.1" maxlength="20" placeholder="Name">
+                    </div>
+                </fieldset>
+            </div>
+
+            <div id="newRow1.2" class="row"></div>
+
+            <div id="newRow1.3" class="row"></div>
+
+            <div id="newRow1.4" class="row"></div>
+
+            <div id=newRow2.1" class="row"> <!--row 2.1-->
+                <fieldset>
+                    <div class="small-2 medium-1 columns">
+                        <label>2.1</label>
+                    </div>
+                    <div class="small-3 medium-2 columns">
+                        <input type="number" required id="radioNum2.1" min="1" max="20" placeholder="1-20">
+                    </div>
+                    <div class="small-7 medium-3 columns">
+                        <input type="text" required id="patrolName2.1" maxlength="50" placeholder="Name">
+                    </div>
+                    <div class="small-3 medium-2 column">
+                        <input type="time" required id="dateTime2.1">
+                    </div>
+                    <div class="small-3 medium-2 column">
+                        <select id="cert2.1">
+                            <option value="BAS">BAS</option>
+                            <option value="CER">CER</option>
+                            <option value="SEN">SEN</option>
+                        </select>
+                    </div>
+                    <div class="small-6 medium-2 columns end">
+                        <input type="text" required id="guestName2.1" maxlength="20" placeholder="Name">
+                    </div>
+                </fieldset>
+            </div>
+
+            <div id="newRow2.2" class="row"></div>
+
+            <div id="newRow2.3" class="row"></div>
+
+            <div id="newRow2.4" class="row"></div>
+
+            <div id=newRow3.1" class="row"> <!--row 3.1-->
+                <fieldset>
+                    <div class="small-2 medium-1 columns">
+                        <label>3.1</label>
+                    </div>
+                    <div class="small-3 medium-2 columns">
+                        <input type="number" required id="radioNum3.1" min="1" max="20" placeholder="1-20">
+                    </div>
+                    <div class="small-7 medium-3 columns">
+                        <input type="text" required id="patrolName3.1" maxlength="50" placeholder="Name">
+                    </div>
+                    <div class="small-3 medium-2 column">
+                        <input type="time" required id="dateTime3.1">
+                    </div>
+                    <div class="small-3 medium-2 column">
+                        <select id="cert3.1">
+                            <option value="BAS">BAS</option>
+                            <option value="CER">CER</option>
+                            <option value="SEN">SEN</option>
+                        </select>
+                    </div>
+                    <div class="small-6 medium-2 columns end">
+                        <input type="text" required id="guestName3.1" maxlength="20" placeholder="Name">
+                    </div>
+                </fieldset>
+            </div>
+
+            <div id="newRow3.2" class="row"></div>
+
+            <div id="newRow3.3" class="row"></div>
+
+            <div id="newRow3.4" class="row"></div>
+
+            <div id=newRow4.1" class="row"> <!--row 4.1-->
+                <fieldset>
+                    <div class="small-2 medium-1 columns">
+                        <label>4.1</label>
+                    </div>
+                    <div class="small-3 medium-2 columns">
+                        <input type="number" required id="radioNum4.1" min="1" max="20" placeholder="1-20">
+                    </div>
+                    <div class="small-7 medium-3 columns">
+                        <input type="text" required id="patrolName4.1" maxlength="50" placeholder="Name">
+                    </div>
+                    <div class="small-3 medium-2 column">
+                        <input type="time" required id="dateTime4.1">
+                    </div>
+                    <div class="small-3 medium-2 column">
+                        <select id="cert4.1">
+                            <option value="BAS">BAS</option>
+                            <option value="CER">CER</option>
+                            <option value="SEN">SEN</option>
+                        </select>
+                    </div>
+                    <div class="small-6 medium-2 columns end">
+                        <input type="text" required id="guestName4.1" maxlength="20" placeholder="Name">
+                    </div>
+                </fieldset>
+            </div>
+
+            <div id="newRow4.2" class="row"></div>
+
+            <div id="newRow4.3" class="row"></div>
+
+            <div id="newRow4.4" class="row"></div>
+
+            <div id="newRow5.1" class="row"> <!--aux.1-->
+                <fieldset>
+                    <div class="small-2 medium-1 columns">
+                        <label>AUX.1</label>
+                    </div>
+                    <div class="small-3 medium-2 columns">
+                        <input type="number" required id="radioNum5.1" min="1" max="20" placeholder="1-20">
+                    </div>
+                    <div class="small-7 medium-3 columns">
+                        <input type="text" required id="patrolName5.1" maxlength="50" placeholder="Name">
+                    </div>
+                    <div class="small-3 medium-2 column">
+                        <input type="time" required id="dateTime5.1">
+                    </div>
+                    <div class="small-3 medium-2 column">
+                        <select id="cert5.1">
+                            <option value="BAS">BAS</option>
+                            <option value="CER">CER</option>
+                            <option value="SEN">SEN</option>
+                        </select>
+                    </div>
+                    <div class="small-6 medium-2 columns end">
+                        <input type="text" required id="guestName5.1" maxlength="20" placeholder="Name">
+                    </div>
+                </fieldset>
+            </div>
+
+            <div id="newRow5.2" class="row"></div>
+
+            <div id="newRow5.3" class="row"></div>
+
+            <div id="newRow5.4" class="row"></div>
+
+            <div id="newRow6.1" class="row"> <!--PD-T2-->
+                <fieldset>
+                    <div class="small-2 medium-1 columns">
+                        <label>PD-T2</label>
+                    </div>
+                    <div class="small-3 medium-2 columns">
+                        <input type="number" required id="radioNum6.1" min="1" max="20" placeholder="1-20">
+                    </div>
+                    <div class="small-7 medium-3 columns">
+                        <input type="text" required id="patrolName6.1" maxlength="50" placeholder="Name">
+                    </div>
+                    <div class="small-3 medium-2 column">
+                        <input type="time" required id="dateTime6.1">
+                    </div>
+                    <div class="small-3 medium-2 column">
+                        <select id="cert6.1">
+                            <option value="BAS">BAS</option>
+                            <option value="CER">CER</option>
+                            <option value="SEN">SEN</option>
+                        </select>
+                    </div>
+                    <div class="small-6 medium-2 columns end">
+                        <input type="text" required id="guestName6.1" maxlength="20" placeholder="Name">
+                    </div>
+                </fieldset>
+            </div>
+
+            <div id="newRow6.2" class="row"></div>
+
+            <div id="newRow6.3" class="row"></div>
+
+            <div id="newRow6.4" class="row"></div>
+
+            <div id="newRow7.1" class="row"> <!--AD-T1-->
+                <fieldset>
+                    <div class="small-2 medium-1 columns">
+                        <label>APD-T1</label>
+                    </div>
+                    <div class="small-3 medium-2 columns">
+                        <input type="number" required id="radioNum7.1" min="1" max="20" placeholder="1-20">
+                    </div>
+                    <div class="small-7 medium-3 columns">
+                        <input type="text" required id="patrolName7.1" maxlength="50" placeholder="Name">
+                    </div>
+                    <div class="small-3 medium-2 column">
+                        <input type="time" required id="dateTime7.1">
+                    </div>
+                    <div class="small-3 medium-2 column">
+                        <select id="cert7.1">
+                            <option value="BAS">BAS</option>
+                            <option value="CER">CER</option>
+                            <option value="SEN">SEN</option>
+                        </select>
+                    </div>
+                    <div class="small-6 medium-2 columns end">
+                        <input type="text" required id="guestName7.1" maxlength="20" placeholder="Name">
+                    </div>
+                </fieldset>
+            </div>
+
+            <div id="newRow7.2" class="row"></div>
+
+            <div id="newRow7.3" class="row"></div>
+
+            <div id="newRow7.4" class="row"></div>
+
+            <div id="newRow8.1" class="row"> <!--AD-T3-->
+                <fieldset>
+                    <div class="small-2 medium-1 columns">
+                        <label>APD-T3</label>
+                    </div>
+                    <div class="small-3 medium-2 columns">
+                        <input type="number" required id="radioNum8.1" min="1" max="20" placeholder="1-20">
+                    </div>
+                    <div class="small-7 medium-3 columns">
+                        <input type="text" required id="patrolName8.1" maxlength="50" placeholder="Name">
+                    </div>
+                    <div class="small-3 medium-2 column">
+                        <input type="time" required id="dateTime8.1">
+                    </div>
+                    <div class="small-3 medium-2 column">
+                        <select id="cert8.1">
+                            <option value="BAS">BAS</option>
+                            <option value="CER">CER</option>
+                            <option value="SEN">SEN</option>
+                        </select>
+                    </div>
+                    <div class="small-6 medium-2 columns end">
+                        <input type="text" required id="guestName8.1" maxlength="20" placeholder="Name">
+                    </div>
+                </fieldset>
+            </div>
+
+            <div id=newRow8.2" class="row"></div>
+
+            <div id=newRow8.3" class="row"></div>
+
+            <div id=newRow8.4" class="row"></div>
+
+            <div id="newRow9.1" class="row"> <!--TRNG-T4-->
+                <fieldset>
+                    <div class="small-2 medium-1 columns">
+                        <label>TRNG-T4</label>
+                    </div>
+                    <div class="small-3 medium-2 columns">
+                        <input type="number" required id="radioNum9.1" min="1" max="20" placeholder="1-20">
+                    </div>
+                    <div class="small-7 medium-3 columns">
+                        <input type="text" required id="patrolName9.1" maxlength="50" placeholder="Name">
+                    </div>
+                    <div class="small-3 medium-2 column">
+                        <input type="time" required id="dateTime9.1">
+                    </div>
+                    <div class="small-3 medium-2 column">
+                        <select id="cert9.1">
+                            <option value="BAS">BAS</option>
+                            <option value="CER">CER</option>
+                            <option value="SEN">SEN</option>
+                        </select>
+                    </div>
+                    <div class="small-6 medium-2 columns end">
+                        <input type="text" required id="guestName9.1" maxlength="20" placeholder="Name">
+                    </div>
+                </fieldset>
+            </div>
+
+            <div id=newRow9.2" class="row"></div>
+
+            <div id="newRow9.3" class=row"></div>
+
+            <div id="newRow9.4" class=row"></div>
+
+            <div id="newRow10.1" class="row"> <!--med-->
+                <fieldset>
+                    <div class="small-2 medium-1 columns">
+                        <label>Med. Asst.</label>
+                    </div>
+                    <div class="small-3 medium-2 columns">
+                        <input type="number" required id="radioNum10.1" min="1" max="20" placeholder="1-20">
+                    </div>
+                    <div class="small-7 medium-3 columns">
+                        <input type="text" required id="patrolName10.1" maxlength="50" placeholder="Name">
+                    </div>
+                    <div class="small-3 medium-2 column">
+                        <input type="time" required id="dateTime10.1">
+                    </div>
+                    <div class="small-3 medium-2 column end">
+                        <select id="cert10.1">
+                            <option value="BAS">BAS</option>
+                            <option value="CER">CER</option>
+                            <option value="SEN">SEN</option>
+                        </select>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div id="newRow10.2" class="row"></div>
+
+            <div id=newRow10.3" class="row"></div>
+
+            <div id=newRow10.4" class="row"></div>
+
+            <div class="row"> <!--submit row-->
+                <div class="end">
+                    <button  onclick="submit" class="success">Submit</button>
+                </div>
+            </div>
+        </form>
+    </body>
+        <!--Scripts-->
+        <script src="js/vendor/modernizr.js"></script>
+        <script scr="js/vendor/jquery.js"></script>
+        <script src="scripts/nnspForm.js"></script>
+</html>

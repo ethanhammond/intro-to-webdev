@@ -1,0 +1,96 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, img, ins, kbd, q, s, samp, small, strike, strong, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    margin : 1.85% 27.798% 0 27.798%;
+    line-height: 1.5;
+    width: 50%;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+h1 {
+    font-size : 70px;
+    font-family: "Adobe GaramondPro", "Times New Roman", "serif"; /*this might work, don't have Adobe or helvetica installed, expensive*/
+}
+
+h1 span {
+    color: red;
+}
+
+p {
+    font-family: "Helvetica Neue", "Times New Roman", "serif";
+    font-size: 16px;
+    font-weight: 300;
+    width: 100%;
+}
+
+.italics {
+    font-style: italic;
+}
+
+.sectionName  {
+    font-weight: 400;
+    font-family: "Helvetica Neue", "Times New Roman", "serif";
+    font-size: 20px;
+}
+
+#img1 {
+    float: left;
+    background: transparent;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    left: 5%;
+}
+
+#img2 {
+    float: right;
+    background: transparent;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    left: 75%;
+}
+
+#img3 {
+    background: transparent;
+    padding-top: 1.482%;
+    max-width: 100%;
+    width: 100%;
+}
+
+#fitToPara {
+    width: 95%;
+}
+
+#jolieWidth {
+    width: 22.23%;
+}
+
+#pittWidth {
+    width: 100%;
+}

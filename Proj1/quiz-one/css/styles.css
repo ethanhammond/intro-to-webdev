@@ -1,0 +1,85 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, img, ins, kbd, q, s, samp, small, strike, strong, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    border: 20px solid #592323;
+    font-family: Sans-Serif, Serif;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h1, h2, h3, h6, p {
+    margin: 0 7.4% 0 7.4%;
+}
+
+p{
+    padding: 0 0 1% 0 ;
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 95%;
+}
+
+#img1 {
+    position: absolute;
+    left: 17%;
+}
+#width {
+    width: 140%;
+}
+
+#grey {
+    color: darkgrey;
+}
+
+#topBlock {
+    height: 4.4%;
+    background-color: #2c2c2c;
+    font-size: 45px;
+    padding: .5% 0 .5% 0;
+    font-family: sans-serif, serif;
+}
+
+#submit {
+    color: white;
+    margin: 0 7.4% 0 7.4%;
+}
+
+#contact {
+    color: white;
+    left: 14.8%;
+}
+
+.italics {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bolder;
+}

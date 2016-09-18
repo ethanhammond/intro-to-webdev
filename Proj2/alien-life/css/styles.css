@@ -1,0 +1,193 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, img, ins, kbd, q, s, samp, small, strike, strong, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    background-color: black;
+    background-image: url("../images/mars_rotated.jpg");
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+    font-family: MuseoSans;
+    src : url("../data/exljbris%20-%20MuseoSans-500.otf");
+}
+
+p, span, div {
+    color: white;
+    font-family: "MuseoSans" , "serif";
+    font-size: 18px;
+    line-hieght: 2;
+}
+
+p {
+    padding: 1% 0 1% 0;
+    margin: 0 5% 0 5%;
+}
+
+#title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    font-family: "MuseoSans" , "serif";
+    padding: 15% 0 4% 0;
+}
+
+.sectionTitle {
+    margin-left: 2.5%;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+#largerFont {
+    font-size: 70px;
+    margin: 0 0 0 33%;
+}
+
+#smallerFont {
+    font-size: 35px;
+    margin: 0 0 0 33%;
+}
+
+.italics {
+    font-style: italic;
+}
+
+#leftMargin {
+    margin-left: 25%;
+}
+
+#noSpace {
+    padding: 0 0 1% 0;
+}
+
+#endOfLeftMargin {
+    padding: 0 0 1% 0;
+}
+
+#leftQuote {
+    line-height: 1.75;
+    float: left;
+    width: 15%;
+    margin: 1% 0 0 5%;
+    padding: 1% 0 1% 0 ;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+}
+
+#rightMargin {
+    margin-right: 25%;
+    margin-left: 5%;
+}
+
+#rightComment {
+    float: right;
+    border-bottom: 5px solid white;
+    width: 20%;
+    text-align: center;
+    margin: 17% 5% 0 0;
+    padding: 2% 0 2% 0 ;
+}
+
+#rightPic {
+    float: right;
+    position: absolute;
+    margin: 0 0 0 74%;
+    padding: 1% 0 0 2%;
+}
+
+.width {
+    width: 99%;
+}
+
+@media only screen and (max-width: 480px) {  /*phone*/
+    #largerFont {
+        font-size: 50px;
+        margin-left: 20%;
+    }
+
+    #smallerFont {
+        font-size: 25px;
+        margin-left: 20%;
+    }
+
+    #leftMargin {
+        margin-left: 0%;
+        padding-top: 20%;
+    }
+
+    #leftQuote {
+        width: 90%;
+        padding: 2% 0 2% 0;
+        margin-bottom: 2%;
+    }
+
+    #rightMargin {
+        margin-right: 0%;
+        padding-top: 2%;
+    }
+
+    #rightComment {
+        width: 90%;
+        margin: 5% 5% 5% 0 ;
+    }
+
+    #rightPic {
+        position: static;
+        margin: 2% 29% 0 0;
+    }
+
+    .width {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {  /*Small tablet*/
+    #largerFont {
+        font-size: 45px;
+        margin-left: 25%;
+    }
+
+    #smallerFont {
+        font-size: 22.5px;
+        margin-left: 25%;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {  /*Average tablet or small monitor*/
+    #largerFont {
+        margin-left: 35%;
+    }
+
+    #smallerFont {
+        margin-left: 35%;
+    }
+}
+
+/*widescreen is default layout*/

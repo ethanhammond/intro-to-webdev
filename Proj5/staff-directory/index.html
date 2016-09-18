@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+AUTHOR: EH
+VERSION: 1.0
+CREATED: 4.21.2015
+ASSIGNMENT: Staff Directory
+-->
+<html lang="en" data-data-ng-app="staffApp" xmlns:filter="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>Staff Directory</title>
+    <link href="css/foundation.css" rel="stylesheet">
+</head>
+<body>
+
+    <div id="schoolSelection" class="small-12 columns"  data-ng-controller="'staffCtrl'">
+        <div class="row">
+            <fieldset>
+                <h3>Please select a school</h3>
+                <div class="button round" data-ng-click="filterByBuilding('HS')">HS</div>
+                <div class="button round" data-ng-click="filterByBuilding('MS')">MS</div>
+                <div class="button round" data-ng-click="filterByBuilding('Sheridan')">Sheridan</div>
+                <div class="button round" data-ng-click="filterByBuilding('Central')">Central</div>
+                <div class="button round" data-ng-click="filterByBuilding('Ottawa')">Ottawa</div>
+                <div class="button round" data-ng-click="filterByBuilding('Lincoln')">Lincoln</div>
+                <div class="button round" data-ng-click="filterByBuilding('Spitler')">Spitler</div>
+            </fieldset>
+        </div>
+    </div>
+    <div class="row"></div>
+    <div id="staffDir" class="small-12-columns">
+        <div class="row">
+            <fieldset>
+                <div id="positionLabels" class="small-12 columns">
+                    <div class="small-3 columns"><h3>Name</h3></div>
+                    <div class="small-3 columns"><h3>Position</h3></div>
+                    <div class="small-3 columns"><h3>Phone</h3></div>
+                    <div class="small-3 columns"><h3>Email</h3></div>
+                </div>
+                <div class="data-ng-repeat="staffMem in staff | filter:{building:filterBuilding}></div>
+                    <div class="small-3 columns">{{staff.getLastName()}},{{staff.getFirstName()}}</div>
+                    <div class="small-3 columns">{{staff.getJob()}},{{staff.getSubject()}}</div>
+                    <div class="small-3 columns">{{staff.getPhone()}}</div>
+                    <div class="small-3 columns">{{staff.getEmail()}}</div>
+            </fieldset>
+        </div>
+    </div>
+
+<!-- SCRIPTS -->
+    <script src="scripts/Libraries/angular.js"></script>
+    <script src="scripts/Libraries/jquery.js"></script>
+    <script src="scripts/Libraries/modernizr.js"></script>
+    <script src="scripts/StaffMemClass.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/Angular/app.js"></script>
+    <script src="scripts/Angular/controller.js"></script>
+</body>
+</html>
